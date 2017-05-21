@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+   >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativeLayout">
+
+            <ImageView
+                android:id="@+id/iv_info_item_recycler"
+                android:layout_width="150dp"
+                android:layout_height="110dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:background="@drawable/nine_patch_durations"
+                android:textColor="@android:color/white"
+                android:layout_alignBottom="@id/iv_info_item_recycler"
+                android:layout_alignRight="@id/iv_info_item_recycler"
+                android:layout_marginBottom="7dp"
+                android:layout_marginRight="10dp"
+                android:paddingLeft="5dp"
+                android:id="@+id/textDuration"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relativeLayout"
+            android:text="Tiêu đề video-Tiêu Đề video-Tiêu đề video"
+            android:layout_alignLeft="@id/relativeLayout"
+            android:layout_alignRight="@id/relativeLayout"
+            android:lines="1"
+            android:maxLength="30"
+            android:id="@+id/tvTitleInfoRecordVideo"
+            android:textColor="@color/com_smart_login_code"/>
+    </RelativeLayout>
+</RelativeLayout>

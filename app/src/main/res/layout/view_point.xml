@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:weightSum="9"
+    android:paddingLeft="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp">
+
+    <TextView
+        android:id="@+id/size"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:text="2.5 MB" />
+
+    <TextView
+        android:id="@+id/point"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:text="100 Điểm" />
+    <TextView
+        android:id="@+id/countLike"
+        android:layout_width="0dp"
+        android:text="100k Like"
+        android:layout_height="wrap_content"
+        android:layout_weight="3" />
+
+
+</LinearLayout>

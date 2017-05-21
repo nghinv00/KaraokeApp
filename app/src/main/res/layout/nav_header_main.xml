@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="190dp"
+    android:background="#7532da"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="30dp"
+    android:id="@+id/layout_info"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <com.karaapp.karaokeapp.ui.view.ProfilePictureBadge
+        android:layout_marginTop="16dp"
+        android:id="@+id/avata"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center">
+
+    </com.karaapp.karaokeapp.ui.view.ProfilePictureBadge>
+
+    <TextView
+        android:id="@+id/id_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/nav_header_vertical_spacing"
+        android:gravity="center"
+        android:text="Android Studio"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <ImageButton
+        android:id="@+id/tbMoiBanBe"
+        android:layout_width="180dp"
+        android:layout_height="26dp"
+        android:background="@drawable/moibanbe" />
+
+
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/loginface"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Kết nối Facebook"/>
+
+    </RelativeLayout>
+</LinearLayout>
+<!--
+
+<com.facebook.login.widget.ProfilePictureView
+android:id="@+id/avata"
+android:layout_width="70dp"
+android:layout_height="70dp"
+android:layout_gravity="center"
+android:background="@drawable/nav_avatar_face"/>-->

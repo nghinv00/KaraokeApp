@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="#7532da"
+    android:fillViewport="true"
+    android:gravity="center_vertical"
+    android:weightSum="10"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <com.karaapp.karaokeapp.ui.view.IvDrawerBadge
+            android:id="@+id/iv_drawer"
+            android:layout_width="45dp"
+            android:layout_height="50dp"
+            android:layout_weight="2"
+            android:onClick="drawerAction"
+            android:padding="10dp"
+            android:layout_marginTop="3dp"
+            app:srcCompat="@drawable/ic_view_headline_black_24dp" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="260dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/iv_drawer"
+            android:layout_weight="5.63"
+            android:gravity="center_vertical"
+            android:lines="2"
+            android:text="KaraOke Online"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <android.support.v7.widget.SearchView
+app:goIcon="@drawable/nine_patch_durations"
+            android:id="@+id/layout_Seach"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/imageViewMenu"
+            android:layout_toRightOf="@+id/title"
+            app:searchIcon="@drawable/ic_search_black_24dp"
+            android:maxWidth="295dp"
+            app:closeIcon="@drawable/ic_clear_white_24dp"
+            app:voiceIcon="@drawable/ic_keyboard_voice_white_24dp"
+            android:layout_toStartOf="@+id/imageViewMenu"
+            />
+
+        <ImageView
+            android:id="@+id/imageViewMenu"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="2dp"
+            android:layout_weight="0.99"
+            app:srcCompat="@drawable/button_options" />
+
+    </RelativeLayout>
+</RelativeLayout>

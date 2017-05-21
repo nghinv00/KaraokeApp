@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/open"
+        android:icon="@drawable/nine_patch_durations"
+        android:title="Mở bài thu âm"
+        android:visible="true"/>
+
+    <item
+        android:id="@+id/edit"
+        android:checkable="false"
+        android:icon="@drawable/nine_patch_durations"
+        android:title="Chỉnh sửa"
+        android:visible="true"/>
+    <item
+        android:id="@+id/share"
+        android:icon="@drawable/nine_patch_durations"
+        android:title="Chia sẻ"
+        android:visible="true"/>
+    <item
+        android:id="@+id/delete"
+        android:icon="@drawable/nine_patch_durations"
+        android:title="Xóa"
+        android:visible="true"/>
+
+</menu>

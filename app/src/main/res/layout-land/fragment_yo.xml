@@ -1,0 +1,100 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context="com.karaapp.karaokeapp.ui.fragment.RecordVideoFragment">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <FrameLayout
+            android:id="@+id/fragment"
+            android:name="com.karaapp.karaokeapp.ui.fragment.YouTubeFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000000"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/wrap_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="364dp">
+
+            </RelativeLayout>
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp">
+
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/record_land"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="12">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="2"
+                    app:srcCompat="@drawable/ic_music" />
+
+                <TextView
+                    android:id="@+id/record"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="8"
+                    android:background="#FFFFFF"
+                    android:drawableLeft="@drawable/ic_micro_black"
+                    android:drawableRight="@drawable/ic_drop_down_right_blue"
+                    android:gravity="center"
+                    android:paddingTop="10dp"
+                    android:text="Bấm để thu âm"
+                    android:textSize="17sp" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    app:srcCompat="@drawable/ic_music" />
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtTitleVideo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="#2196F3"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/txtlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="100dp"
+            android:textSize="20sp"
+            android:text="Danh sách video liên quan" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_play_youtube"
+            android:layout_width="match_parent"
+            android:layout_height="265dp">
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+</ScrollView>

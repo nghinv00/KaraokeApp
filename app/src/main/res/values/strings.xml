@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">KaraokeApp</string>
+    <string name="facebook_app_id">1185705754871650</string>
+    <!--item list expand-->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="tophit">Top HITS</string>
+    <string name="karaOkemoi">KaraOke mới</string>
+    <string name="nhactre">Nhạc trẻ</string>
+    <string name="nhactrutinh">Nhạc trữ tình</string>
+    <string name="nhacthieunhi">Nhạc thiếu nhi</string>
+    <string name="nhacdo">Nhạc đỏ</string>
+    <string name="nhacquehuong">Nhạc quê hương</string>
+    <string name="rap">Rap</string>
+    <string name="karaoketienganh">KaraOke tiếng anh</string>
+
+    <string name="list_record_mp3">Danh sách thu âm MP3</string>
+    <string name="list_record_vid">Danh sách thu âm Video</string>
+    <string name="list_like">Danh sách yêu thích</string>
+    <string name="billboard_record">BXH Bài hát thu âm</string>
+    <string name="billboard_singer">BXH danh ca</string>
+    <string name="community_fb">Tham gia cộng đồng Karaoke FB</string>
+    <string name="intro_app">Giới thiệu ứng dụng</string>
+    <string name="question">Câu hỏi thường gặp</string>
+    <string name="game_app">Trò chơi và ứng dụng hay</string>
+    <string name="rule_call">Tài khoản và liên hệ</string>
+    <string name="dong_y">Đồng ý</string>
+    <string name="tat_ung_dung">Tắt ứng dụng</string>
+    <string name="bo_qua">Bỏ qua</string>
+    <string name="ban_muon_tat_ung_dung_kara">Bạn muốn tắt ứng dụng Kara</string>
+    <string name="quang_cao">Quảng cáo: Tắt quảng cáo phí</string>
+    <string name="phi">$0,99</string>
+    <!--tittle header-->
+    <string name="person">CÁ NHÂN</string>
+    <string name="community">CỘNG ĐỒNG</string>
+    <string name="app">ỨNG DỤNG</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tittle_song">ĐÊM NGÀY XA EM -KARAOKE NHẠC TRẺ - HÁT KARAOKE ONLINE</string>
+    <string name="minuteeShare">2 phút trước</string>
+    <string name="title_billboard_song">BXH bài hát</string>
+    <string name="title_search_song">Tìm kiếm bài hát</string>
+
+    <string name="not_love_video">Bỏ thích video</string>
+    <string name="trang_ca_nhan">Trang cá nhân</string>
+
+    <string name="list_record_info_vid">Chi tiết thu âm Video</string>
+    <string name="list_record_info_mp3">Chi tiết thu âm Mp3</string>
+    <string name="xoa_file">Xóa file</string>
+    <string name="ban_muon_xoa_bai_thu_am_khong">Bạn muốn xóa bài thu âm không ?</string>
+    <string name="share">Chia sẻ</string>
+    <string name="chinh_sua">Chỉnh Sửa</string>
+    <string name="ten_bai_hat_thu_am">Tên bài hát thu âm</string>
+
+
+</resources>

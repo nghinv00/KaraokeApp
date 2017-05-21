@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:weightSum="10">
+
+    <TextView
+        android:id="@+id/viewCount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3.5"
+        android:drawableLeft="@drawable/luotxem"
+        android:text="500k" />
+
+    <TextView
+        android:id="@+id/viewComment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3.5"
+        android:drawableLeft="@drawable/tinnhan"
+        android:text="500k" />
+
+    <com.facebook.share.widget.ShareButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:enabled="true" />
+    <TextView
+        android:id="@+id/viewShare"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5" />
+
+    <com.facebook.share.widget.LikeView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </com.facebook.share.widget.LikeView>
+    <TextView
+        android:id="@+id/viewLike"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:layout_marginRight="5dp" />
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/tophit"
+        android:orderInCategory="1"
+        android:title="@string/tophit"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/karaOke"
+        android:orderInCategory="2"
+        android:title="@string/karaOkemoi"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/nhactre"
+        android:orderInCategory="3"
+        android:title="@string/nhactre"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/nhactrutinh"
+        android:orderInCategory="4"
+        android:title="@string/nhactrutinh"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/nhacthieunhi"
+        android:orderInCategory="5"
+        android:title="@string/karaOkemoi"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/nhacdo"
+        android:orderInCategory="6"
+        android:title="@string/nhacdo"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/nhacquehuong"
+        android:orderInCategory="7"
+        android:title="@string/nhacquehuong"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/rap"
+        android:orderInCategory="8"
+        android:title="@string/rap"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/karaOketienganh"
+        android:orderInCategory="9"
+        android:title="@string/karaoketienganh"
+        app:showAsAction="never"/>
+
+</menu>

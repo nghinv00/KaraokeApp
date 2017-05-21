@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:myapp="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/item_not_love"
+        android:title="@string/not_love_video"
+        android:icon="@drawable/not_love_video"
+        app:showAsAction="always"
+        />
+</menu>

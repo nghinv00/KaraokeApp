@@ -1,0 +1,121 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.karaapp.karaokeapp.ui.fragment.RecordAudioInfoFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <FrameLayout
+            android:id="@+id/fragmentYoutubePlay_Mp3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3" />
+
+
+        <RelativeLayout
+            android:id="@+id/relatotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+
+            <RelativeLayout
+                android:id="@+id/relatotal1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/nameSong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/ten_bai_hat_thu_am"
+                    android:textColor="#0033FF" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relatotal2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@id/relatotal1">
+
+                <ImageView
+                    android:id="@+id/ivEditInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:padding="15dp"
+                    android:src="@drawable/ic_border_color_black_24dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/ivEditInfo"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignStart="@+id/ivEditInfo"
+                    android:padding="5dp"
+                    android:text="@string/chinh_sua" />
+
+                <ImageView
+                    android:id="@+id/ivShareInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/textView2"
+                    android:layout_alignRight="@+id/textView2"
+                    android:layout_alignTop="@+id/ivDeleteInfo"
+                    android:padding="15dp"
+                    android:src="@drawable/ic_share_white_24dp"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ivShareInfo"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="15dp"
+                    android:padding="5dp"
+                    android:text="Chia sẻ" />
+
+                <ImageView
+                    android:id="@+id/ivDeleteInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:padding="15dp"
+                    android:src="@drawable/ic_delete_black_24dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/ivDeleteInfo"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignRight="@+id/ivDeleteInfo"
+                    android:padding="5dp"
+                    android:text="@string/xoa_file" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_info_audio"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="5" />
+
+    </LinearLayout>
+</ScrollView>
