@@ -55,7 +55,7 @@ public class SearchFragment extends BackFragment {
     DurationsResponse durationsResponse;
     static List<String> durationList = new ArrayList<>();
 
-    private static final int NUMBER_RESULT = 2;
+    private static final int NUMBER_RESULT = 5;
     private StringBuilder builderVideoId = new StringBuilder();
 
     public SearchFragment() {
@@ -140,8 +140,27 @@ public class SearchFragment extends BackFragment {
                         searchView.onActionViewCollapsed();
                     if (stringQuery.toString().length() > 0) {
                         mVideos.clear();
-//                        query("karaoke lyrics:" + stringQuery.toString(), new QueryCallback() {
+                        query("karaoke lyrics:"+ stringQuery, new QueryCallback() {
+                                    @Override
+                                    public void callback(List<String> listId) {
+                                        for (String id : listId) {
+                                            if (builderVideoId.length() < 1) {
+                                                builderVideoId.append(id + "");
+                                            } else {
+                                                builderVideoId.append("," + id);
+                                            }
+                                        }
+                                        AsyncTaskDuration duration = new AsyncTaskDuration(new QueryDuratioCallback() {
+                                            @Override
+                                            public void callback(List<String> durations) {
+                                                // đến đây đã lấy được list duration
+                                                mVideos.add(new VideoMdl("1", "1", "1", "1"));
+                                            }
+                                        });
+                                        duration.execute(builderVideoId.toString());
 
+                                    }
+                                });
                         activity.mTittle.setVisibility(View.VISIBLE);
                         searchView.onActionViewCollapsed();
                     }
@@ -167,7 +186,7 @@ public class SearchFragment extends BackFragment {
 
 
     private void query(final String query, final QueryCallback callback) {
-        
+
         params.put("part", "snippet");
         params.put("type", "video");
         params.put("order", "viewCount");
